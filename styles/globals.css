@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+/*
+ * Palette + type locked 2026-08-02 (see project memory: "Dealer's Choice"
+ * direction, confirmed after a 3-way comparison mockup). Don't hand-tweak
+ * without updating that record — these values are the actual approved
+ * mockup's colors, not placeholders.
+ */
+:root {
+  --bg: #160d0c;
+  --surface: #241514;
+  --surface-2: #2c1917;
+  --border: #40241f;
+  --ink: #f6ece0;
+  --ink-mute: #bea08e;
+  --ink-faint: #8a6f60;
+  --red: #b93a28;
+  --red-bright: #d9553c;
+  --gold: #d3a24a;
+  --gold-dim: #7a5e2c;
+  --felt: #4c7a5c;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-ink: var(--ink);
+  --color-ink-mute: var(--ink-mute);
+  --color-ink-faint: var(--ink-faint);
+  --color-red: var(--red);
+  --color-red-bright: var(--red-bright);
+  --color-gold: var(--gold);
+  --color-gold-dim: var(--gold-dim);
+  --color-felt: var(--felt);
+
+  --font-display: "Arial Black", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-stamp: "Consolas", "SF Mono", "Courier New", monospace;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.02) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+
+/* Minimal prose styling for MDX blog content — no typography plugin
+   dependency for a site this size, just the handful of elements a post
+   actually uses. */
+.prose-restraddle h2 {
+  margin: 2em 0 0.6em;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.4em;
+}
+.prose-restraddle p {
+  margin: 0 0 1.2em;
+}
+.prose-restraddle ul {
+  margin: 0 0 1.2em;
+  padding-left: 1.3em;
+  list-style: disc;
+}
+.prose-restraddle li {
+  margin-bottom: 0.5em;
+}
+.prose-restraddle strong {
+  color: var(--gold);
+}
+.prose-restraddle em {
+  font-style: italic;
+  color: var(--ink-mute);
+}
