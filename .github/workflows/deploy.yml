@@ -4,6 +4,12 @@ on:
   push:
     branches: [main]
 
+# This job never checks out the repo or calls the GitHub API — it only
+# uses the secrets below to SSH out and trigger a remote pull+build. The
+# default GITHUB_TOKEN grant is broader than that needs, so drop it to
+# nothing explicitly rather than relying on the (wider) repo default.
+permissions: {}
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
