@@ -1,0 +1,5 @@
+# restraddle.com robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://restraddle.com/sitemap.xml
