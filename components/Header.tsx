@@ -14,6 +14,9 @@ export default function Header() {
           <Link href="/rules" className="text-ink-mute hover:text-gold">
             Rules
           </Link>
+          <Link href="/games" className="text-ink-mute hover:text-gold">
+            Games
+          </Link>
           <Link href="/shop" className="text-ink-mute hover:text-gold">
             Shop
           </Link>
