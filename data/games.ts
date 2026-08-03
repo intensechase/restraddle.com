@@ -354,6 +354,17 @@ export const GAMES: GameRule[] = [
 
   // ---------- DRAW ----------
   {
+    slug: "archie",
+    name: "Archie",
+    family: "hybrid",
+    tldr: "Triple draw hi/lo where both sides have to actually earn it — no gimme low, no gimme high.",
+    forcedMoney: "Button and blinds.",
+    dealStructure: "Five cards, three separate discard-and-replace draw rounds.",
+    bettingRounds: "Small bet after the deal and the first draw, big bet after the last two draws.",
+    showdown:
+      "Pot splits high/low, but both sides carry a real qualifier: at least a pair of sixes (sometimes nines, depending on the house rule) to win high, an 8-low or better to win low. If nobody clears either bar, the high hand scoops regardless of how weak it actually is.",
+  },
+  {
     slug: "five-card-draw",
     name: "Five Card Draw",
     family: "draw",
