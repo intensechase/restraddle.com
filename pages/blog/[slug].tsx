@@ -27,12 +27,22 @@ export default function BlogPost({
   mdxSource: MDXRemoteSerializeResult;
 }) {
   const pageTitle = `${meta.title} — Restraddle`;
+  const pageUrl = `https://restraddle.com/blog/${meta.slug}`;
 
   return (
     <div className="min-h-screen">
       <Head>
         <title>{pageTitle}</title>
         <meta name="description" content={meta.excerpt} />
+        <link rel="canonical" href={pageUrl} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={meta.excerpt} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={pageUrl} />
+        <meta property="og:site_name" content="Restraddle" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={meta.excerpt} />
       </Head>
 
       <Header />

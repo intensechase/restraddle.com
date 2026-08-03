@@ -15,6 +15,18 @@ export default function Rules() {
           name="description"
           content="Five named straddle variants, correctly explained — including the Idaho Straddle, the one most sites get wrong."
         />
+        <link rel="canonical" href="https://restraddle.com/rules" />
+        <meta property="og:title" content="The Straddle Glossary — Restraddle" />
+        <meta
+          property="og:description"
+          content="Five named straddle variants, correctly explained — including the Idaho Straddle, the one most sites get wrong."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://restraddle.com/rules" />
+        <meta property="og:site_name" content="Restraddle" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="The Straddle Glossary — Restraddle" />
+        <meta name="twitter:description" content="Five named straddle variants, correctly explained." />
       </Head>
 
       <Header />

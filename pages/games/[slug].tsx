@@ -21,11 +21,22 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 export default function GameDetail({ game }: { game: GameRule }) {
   const pageTitle = `${game.name} — The Rulebook — Restraddle`;
 
+  const pageUrl = `https://restraddle.com/games/${game.slug}`;
+
   return (
     <div className="min-h-screen">
       <Head>
         <title>{pageTitle}</title>
         <meta name="description" content={game.tldr} />
+        <link rel="canonical" href={pageUrl} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={game.tldr} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={pageUrl} />
+        <meta property="og:site_name" content="Restraddle" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={game.tldr} />
       </Head>
 
       <Header />

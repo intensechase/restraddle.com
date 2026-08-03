@@ -48,6 +48,21 @@ export default function Home() {
           name="description"
           content="The straddle glossary, home-game strategy for the weekend grinder, and shirts you'd actually wear."
         />
+        <link rel="canonical" href="https://restraddle.com/" />
+        <meta property="og:title" content="Restraddle — Home Game Rules, Strategy & Shop" />
+        <meta
+          property="og:description"
+          content="The straddle glossary, home-game strategy for the weekend grinder, and shirts you'd actually wear."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://restraddle.com/" />
+        <meta property="og:site_name" content="Restraddle" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Restraddle — Home Game Rules, Strategy & Shop" />
+        <meta
+          name="twitter:description"
+          content="The straddle glossary, home-game strategy for the weekend grinder, and shirts you'd actually wear."
+        />
       </Head>
 
       <Header />

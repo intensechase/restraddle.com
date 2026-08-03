@@ -12,6 +12,18 @@ export default function About() {
           name="description"
           content="Why this site is named after a house rule, who it's for, and how it actually makes money."
         />
+        <link rel="canonical" href="https://restraddle.com/about" />
+        <meta property="og:title" content="About — Restraddle" />
+        <meta
+          property="og:description"
+          content="Why this site is named after a house rule, who it's for, and how it actually makes money."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://restraddle.com/about" />
+        <meta property="og:site_name" content="Restraddle" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="About — Restraddle" />
+        <meta name="twitter:description" content="Why this site is named after a house rule, and how it makes money." />
       </Head>
       <Header />
       <div className="mx-auto max-w-2xl px-7 py-16">

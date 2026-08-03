@@ -18,6 +18,21 @@ export default function GamesIndex() {
           name="description"
           content="63 poker variants, correctly explained — from Texas Hold'em to the genuinely obscure. Not beginner content."
         />
+        <link rel="canonical" href="https://restraddle.com/games" />
+        <meta property="og:title" content="The Rulebook — Restraddle" />
+        <meta
+          property="og:description"
+          content="63 poker variants, correctly explained — from Texas Hold'em to the genuinely obscure. Not beginner content."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://restraddle.com/games" />
+        <meta property="og:site_name" content="Restraddle" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="The Rulebook — Restraddle" />
+        <meta
+          name="twitter:description"
+          content="63 poker variants, correctly explained — from Texas Hold'em to the genuinely obscure."
+        />
       </Head>
 
       <Header />

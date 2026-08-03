@@ -24,6 +24,18 @@ export default function Shop() {
           name="description"
           content="Shirts we'd actually wear. Every design links straight to Amazon — no separate checkout here."
         />
+        <link rel="canonical" href="https://restraddle.com/shop" />
+        <meta property="og:title" content="Shop — Restraddle" />
+        <meta
+          property="og:description"
+          content="Shirts we'd actually wear. Every design links straight to Amazon — no separate checkout here."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://restraddle.com/shop" />
+        <meta property="og:site_name" content="Restraddle" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Shop — Restraddle" />
+        <meta name="twitter:description" content="Shirts we'd actually wear, linking straight to Amazon." />
       </Head>
 
       <Header />
