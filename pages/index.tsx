@@ -59,8 +59,8 @@ export default function Home() {
               ☙ Ultimate Last Action ☙
             </div>
             <h1 className="mb-5 font-display text-5xl font-black leading-[1.08] text-balance">
-              You already know what a straddle is. Do you know an{" "}
-              <span className="text-red-bright">Idaho</span> one?
+              You already know what a straddle is&hellip; Have you heard of an{" "}
+              <span className="text-red-bright">Idaho</span> straddle?
             </h1>
             <p className="mb-8 max-w-md text-lg leading-relaxed text-ink-mute">
               Home-game rules nobody else gets right, strategy for the stuff casinos don&apos;t spread, and shirts
