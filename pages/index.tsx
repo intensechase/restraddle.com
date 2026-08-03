@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
 import { PRODUCTS } from "@/data/products";
 import { GLOSSARY } from "@/data/glossary";
+import { GAMES } from "@/data/games";
 
 const featuredPosts = [
   {
@@ -19,14 +20,21 @@ const featuredPosts = [
     title: "Reading the Same Six People, Every Week",
     excerpt:
       "Casino strategy assumes strangers. Your home game doesn't work that way — here's how to actually use that.",
-    href: "/blog",
+    href: "/blog/reading-the-same-six-people",
   },
   {
     tag: "Hosting",
     title: "Why Most Home Games Die After a Year",
     excerpt: "It's rarely the poker. It's recruiting, burnout, and nobody owning the follow-up text.",
-    href: "/blog",
+    href: "/blog/why-home-games-die",
   },
+];
+
+const featuredGames = [
+  { slug: "wonky-donkey", name: "Wonky Donkey", hook: "You don't know which game you're in until the flop." },
+  { slug: "murder", name: "Murder", hook: "One card per row. That's the whole twist." },
+  { slug: "chowaha", name: "Chowaha", hook: "Three flops, one grid, several ways through it." },
+  { slug: "scrotum", name: "Scrotum", hook: "Yes, that's really the name. Yes, it's a real BARGE game." },
 ];
 
 export default function Home() {
@@ -91,8 +99,37 @@ export default function Home() {
       <section className="border-b-2 border-dashed border-border px-7 py-9">
         <div className="mx-auto flex max-w-6xl flex-wrap gap-14">
           <Stat num={GLOSSARY.length.toString()} label="Straddle Variants Documented" />
-          <Stat num="12+" label="Unique & Dealer's-Choice Games" />
+          <Stat num={GAMES.length.toString()} label="Games in the Rulebook" />
           <Stat num="0" label="Beginner-101 Filler" />
+        </div>
+      </section>
+
+      <section className="border-b-2 border-dashed border-border px-7 py-16">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-8 flex items-baseline justify-between">
+            <div>
+              <h2 className="font-display text-2xl font-black uppercase">The Rulebook</h2>
+              <p className="mt-1 text-sm text-ink-mute">
+                {GAMES.length} variants, correctly explained. From the casino-standard baseline to the genuinely
+                obscure.
+              </p>
+            </div>
+            <Link href="/games" className="text-xs font-bold uppercase tracking-wide text-gold">
+              Open the Book →
+            </Link>
+          </div>
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+            {featuredGames.map((g) => (
+              <Link
+                key={g.slug}
+                href={`/games/${g.slug}`}
+                className="rounded-lg border-2 border-border bg-surface p-5 transition-colors hover:border-gold"
+              >
+                <h3 className="mb-1.5 font-bold">{g.name}</h3>
+                <p className="text-xs leading-snug text-ink-mute">{g.hook}</p>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
