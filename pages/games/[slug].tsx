@@ -19,10 +19,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 export default function GameDetail({ game }: { game: GameRule }) {
+  const pageTitle = `${game.name} — The Rulebook — Restraddle`;
+
   return (
     <div className="min-h-screen">
       <Head>
-        <title>{game.name} — The Rulebook — Restraddle</title>
+        <title>{pageTitle}</title>
         <meta name="description" content={game.tldr} />
       </Head>
 

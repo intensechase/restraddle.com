@@ -26,10 +26,12 @@ export default function BlogPost({
   meta: PostMeta;
   mdxSource: MDXRemoteSerializeResult;
 }) {
+  const pageTitle = `${meta.title} — Restraddle`;
+
   return (
     <div className="min-h-screen">
       <Head>
-        <title>{meta.title} — Restraddle</title>
+        <title>{pageTitle}</title>
         <meta name="description" content={meta.excerpt} />
       </Head>
 
