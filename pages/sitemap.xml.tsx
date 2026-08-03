@@ -1,18 +1,16 @@
 import type { GetServerSideProps } from "next";
 import { GAMES } from "@/data/games";
-import { getAllPosts } from "@/lib/posts";
 
 const SITE_URL = "https://restraddle.com";
 
 function generateSitemap(): string {
   const today = new Date().toISOString().split("T")[0];
 
-  const staticUrls = ["", "/about", "/blog", "/games", "/rules", "/shop"];
+  const staticUrls = ["", "/about", "/games", "/rules", "/shop"];
 
   const gameUrls = GAMES.map((g) => `/games/${g.slug}`);
-  const postUrls = getAllPosts().map((p) => `/blog/${p.slug}`);
 
-  const urls = [...staticUrls, ...gameUrls, ...postUrls];
+  const urls = [...staticUrls, ...gameUrls];
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

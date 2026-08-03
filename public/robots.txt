@@ -1,5 +1,6 @@
 # restraddle.com robots.txt
 User-agent: *
 Allow: /
+Disallow: /blog
 
 Sitemap: https://restraddle.com/sitemap.xml

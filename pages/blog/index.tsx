@@ -15,6 +15,7 @@ export default function BlogIndex({ posts }: { posts: PostMeta[] }) {
       <Head>
         <title>Blog — Restraddle</title>
         <meta name="description" content="House rules, table dynamics, and home-game strategy for players who already play." />
+        <meta name="robots" content="noindex, nofollow" />
       </Head>
 
       <Header />

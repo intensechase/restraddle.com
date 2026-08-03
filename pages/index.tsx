@@ -7,29 +7,6 @@ import { PRODUCTS } from "@/data/products";
 import { GLOSSARY } from "@/data/glossary";
 import { GAMES } from "@/data/games";
 
-const featuredPosts = [
-  {
-    tag: "House Rules",
-    title: "The Idaho Straddle, Explained",
-    excerpt:
-      "Restraddle from anywhere, ultimate last action preflop only — the rule most home games get slightly wrong.",
-    href: "/blog/idaho-straddle-explained",
-  },
-  {
-    tag: "Table Dynamics",
-    title: "Reading the Same Six People, Every Week",
-    excerpt:
-      "Casino strategy assumes strangers. Your home game doesn't work that way — here's how to actually use that.",
-    href: "/blog/reading-the-same-six-people",
-  },
-  {
-    tag: "Hosting",
-    title: "Why Most Home Games Die After a Year",
-    excerpt: "It's rarely the poker. It's recruiting, burnout, and nobody owning the follow-up text.",
-    href: "/blog/why-home-games-die",
-  },
-];
-
 const featuredGames = [
   { slug: "wonky-donkey", name: "Wonky Donkey", hook: "You don't know which game you're in until the flop." },
   { slug: "murder", name: "Murder", hook: "One card per row. That's the whole twist." },
@@ -142,32 +119,6 @@ export default function Home() {
               >
                 <h3 className="mb-1.5 font-bold">{g.name}</h3>
                 <p className="text-xs leading-snug text-ink-mute">{g.hook}</p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="border-b-2 border-dashed border-border px-7 py-16">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-8 flex items-baseline justify-between">
-            <h2 className="font-display text-2xl font-black uppercase">From the Blog</h2>
-            <Link href="/blog" className="text-xs font-bold uppercase tracking-wide text-gold">
-              View All Posts →
-            </Link>
-          </div>
-          <div className="grid gap-5 md:grid-cols-3">
-            {featuredPosts.map((post) => (
-              <Link
-                key={post.title}
-                href={post.href}
-                className="rounded-lg border-2 border-border bg-surface p-6 transition-colors hover:border-red-bright"
-              >
-                <span className="mb-2 block text-[10.5px] font-bold uppercase tracking-wide text-gold">
-                  {post.tag}
-                </span>
-                <h3 className="mb-2 text-lg font-bold leading-snug">{post.title}</h3>
-                <p className="text-sm leading-relaxed text-ink-mute">{post.excerpt}</p>
               </Link>
             ))}
           </div>

@@ -34,6 +34,7 @@ export default function BlogPost({
       <Head>
         <title>{pageTitle}</title>
         <meta name="description" content={meta.excerpt} />
+        <meta name="robots" content="noindex, nofollow" />
         <link rel="canonical" href={pageUrl} />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={meta.excerpt} />

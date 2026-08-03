@@ -51,9 +51,6 @@ export default function About() {
           <p>
             The <Link href="/games" className="text-gold hover:underline">Rulebook</Link> is the biggest thing
             here — 63 variants, each with its own page, researched properly rather than guessed at from the name.
-            The <Link href="/blog" className="text-gold hover:underline">blog</Link> covers the parts of running a
-            home game that aren&apos;t about the cards at all — keeping a game alive for years instead of months,
-            reading regulars, the social contract nobody writes down but everyone breaks eventually.
           </p>
 
           <p>
