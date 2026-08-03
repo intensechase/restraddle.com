@@ -4,10 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        {/* Real favicon set not generated yet — placeholder emoji favicon
-            (♠️) used during mockup review. Replace with real
-            favicon-*.png / apple-touch-icon.png before launch. */}
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </Head>
       <body>
         <Main />
