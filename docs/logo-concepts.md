@@ -1,5 +1,36 @@
 # Restraddle Logo — Recraft Prompts
 
+## Concept 7 colored version — regenerate instead of hand-patch (2026-08-04)
+
+Manual SVG recoloring (clustering paths by position, recoloring the base
+tier color) hit diminishing returns — small shading/accent sub-paths at
+the seams between stacks kept surfacing as stray-colored slivers, and each
+fix uncovered another one nearby. Rather than keep chasing individual
+paths, going back to Recraft directly with a coloring prompt so the model
+renders clean color regions natively instead of us patching path-by-path.
+
+**Reference image:** `restraddle-idea-... option 3` (the black three-stack
+cascade icon). No hex codes in the prompt on purpose — descriptive color
+language only, since exact hex matching isn't the point here and giving
+Recraft room to render its own clean color transitions avoids the
+sub-path/seam problem entirely.
+
+**Prompt:**
+> Using the reference image as the base composition, recolor the three chip
+> stacks with a subtle, muted color per stack instead of solid black: the
+> shortest stack in a warm off-white or cream tone, the middle stack in a
+> muted brick red, the tallest stack in a muted forest green. Keep all the
+> black outline and edge-notch linework exactly as shown. Colors should
+> feel understated and flat, not bright, glossy, or cartoonish — no
+> gradients, no shading beyond the flat color per stack. Vector illustration
+> style, clean crisp linework, high resolution, print-ready for t-shirt
+> production. Transparent background.
+
+Generation settings: same as concept 7's original run — no hex-specific
+guidance, Recraft V4.0 Pro, vector mode, high-resolution output (print-ready
+per the Merch by Amazon specs earlier in this doc, not just web/favicon
+size, since this one may end up on a shirt).
+
 ## Concept 7 — the meaning itself, no text (2026-08-04)
 
 Everything above is a wordmark treatment. This one is different in kind: a
