@@ -59,10 +59,19 @@ to be exact either way — same potrace vectorize-then-resize pipeline used
 for ideas 10-12 applies here, so crop/resize after generation is lossless
 regardless of which preset is picked.
 
-**Text-only lane (best of idea 1 + 2)** — idea 1's script-Re/block-STRADDLE
-split was the stronger of the two (matches the header's existing re+straddle
-break point; idea 2's full script was a bigger identity departure), so this
-refines that direction rather than averaging both:
+**Text-only lane — revised for use with `restraddle-idea-1-script-re-block-straddle.png` as a reference image upload.**
+Idea 1's script-Re/block-STRADDLE split was already the stronger of the two
+(matches the header's existing re+straddle break point; idea 2's full
+script was a bigger identity departure), so with it as a reference the text
+just needs to preserve that balance and fix the one functional gap — the
+reference PNG has an opaque white background, not transparent:
+> Using the reference image as the base composition and letterforms, keep
+> the flowing cursive "Re" connecting into the bold blocky "STRADDLE"
+> exactly as shown, with clean smooth edges throughout. Single flat black
+> color, transparent background, no gradients or shading.
+
+Original from-scratch version (no reference image) kept below for
+comparison / fallback if the reference-based generation doesn't work:
 > Flat vector logo wordmark, all solid black, the word "Restraddle" — the
 > "Re" rendered in a bold flowing cursive script with one large decorative
 > curl, connecting directly into "STRADDLE" rendered in bold blocky
@@ -73,10 +82,22 @@ refines that direction rather than averaging both:
 > clean line work, no gradients, no drop shadows, no shading, no
 > photorealism. Logo/wordmark composition, horizontal layout.
 
-**Text/chip combo lane (best of idea 10 + 11, learning from 12)** — flat
-geometric chips (not 12's illustrative detail, which got cut), clean edges
-instead of the rough/stamped texture both 10 and 11 came out with, chips
-matched in height to each other:
+**Text/chip combo lane — revised for use with `restraddle-idea-10-block-chips-flat.png` as a reference image upload.**
+With a reference doing the composition/style work, the text only needs to
+flag the deltas rather than re-describe everything — over-specifying
+details the reference already shows just fights the reference. One thing
+still worth stating explicitly: the reference PNG has an opaque white
+background (not transparent), so without calling that out the AI may
+replicate the white box instead of actually going transparent.
+> Using the reference image as the base composition and letterforms, refine
+> it: clean up the letter edges to be perfectly smooth, removing the rough
+> torn/stamped texture, and make the two poker-chip icons replacing the
+> double-D match each other in height exactly. Keep the flat geometric chip
+> style, bold block letterforms, and overall layout. Single flat black
+> color, transparent background, no gradients or shading.
+
+Original from-scratch version (no reference image) kept below for
+comparison / fallback if the reference-based generation doesn't work:
 > Flat vector logo wordmark, all solid black, the text "RESTRA" then two
 > circular flat poker chip icons of matching height side by side replacing
 > the double-D, chips with a clean simple ring and evenly spaced edge
