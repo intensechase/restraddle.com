@@ -1,7 +1,9 @@
 # Restraddle Logo — Recraft Prompts
 
-Five independent directions, each a complete standalone prompt. Generate all
-five, compare, pick a winner (or mix elements from two).
+Five independent directions. Concept 1 (chip-stack "dd") is broken into a
+two-step process — see below for why. Concepts 2-5 are single-generation
+prompts for now, though the same two-step split applies to 2 and 3 if they
+end up the winner instead.
 
 ## How Merch by Amazon actually prints this
 
@@ -22,11 +24,9 @@ Source: [Merch Informer — MBA's Direct-to-Garment Printing](https://merchinfor
 
 ## Shared brand facts (no hex colors yet — core shapes first)
 
-- Wordmark casing per brand: **"re" lowercase, "STRADDLE" caps** (matches
-  the existing header treatment)
 - **Core base = single flat ink color**, not yet tied to site palette —
   once a shape direction wins, we'll generate site-color and other
-  variations from it. Two ink versions per concept below:
+  variations from it. Two ink versions of every prompt below:
   - **White ink** — reads on dark/black and mid-tone colored garments,
     disappears on white/light garments
   - **Black ink** — reads on white/light garments, disappears on black
@@ -39,31 +39,91 @@ Source: [Merch Informer — MBA's Direct-to-Garment Printing](https://merchinfor
 
 ---
 
-## 1. Chip-stack "dd"
+## Why concept 1 is a two-step process
 
-**Concept:** the double-D in "straddle" becomes two poker chips, side by
-side or slightly overlapping — reads as both letters and a mini stack,
-reinforcing the "double/re-" meaning of a restraddle.
+Asking an image model to (a) spell a made-up word correctly, (b) hit an
+exact mixed-case pattern, **and** (c) integrate custom icon shapes into two
+of the letterforms, all in one generation, stacks three separate failure
+modes on top of each other. Realistic outcome: misspellings, ignored case,
+or the chips drawn as decoration next to normal text instead of replacing
+the D's.
 
-**White ink (for dark/black garments):**
-> Flat vector logo wordmark, all solid white, "re" lowercase followed by
-> "STRA" then two circular poker chip icons replacing the double-D, then
-> "LE" uppercase — the two chip icons have a dashed/notched edge ring (like
-> a real poker chip's edge spots), sized and aligned to sit on the same
-> baseline as the surrounding letterforms so they read as the two D's.
-> Bold geometric sans-serif letterforms, heavy weight, no serifs, no
-> script. Single flat white color throughout, transparent background. Flat
-> vector illustration style, clean line work, no gradients, no drop
-> shadows, no photorealism, no shading. Logo/wordmark composition,
-> horizontal layout.
+Splitting it fixes this:
+- **Step 1** asks for nothing but clean typography — just get "restraddle"
+  spelled right, in a font style you like, in whichever casing reads best.
+  This alone is a much easier, more reliable generation.
+- **Step 2** generates the twin-chip icon as its own standalone graphic,
+  sized to swap in for two letterforms. You then combine the two by hand in
+  a vector tool — reliable because neither piece asks the AI to do
+  anything it's bad at.
 
-**Black ink (for light/white garments):**
-> Same as above, single flat black color throughout instead of white,
-> transparent background.
+This same two-step split should carry over to concepts 2 and 3 below (T-chip
+and A-spade) if either of those becomes the winner instead of concept 1 —
+same substitution-reliability problem, same fix.
 
 ---
 
-## 2. Chip-stack "T"
+## Step 1 — wordmark text only, five casing options
+
+No icon substitution in these — pure typography, so you can pick whichever
+casing/style actually renders cleanly and reads best before touching the
+chip swap. Casing is itself a **best-effort** instruction to the model, not
+a guarantee — judge the results by eye rather than trusting it followed the
+capitalization exactly.
+
+Prompt template (repeat per casing, white and black):
+> Flat vector logo wordmark, all solid **[white / black]**, the text
+> "**[WORD]**" spelled exactly as shown, no other letters added or removed.
+> Bold geometric sans-serif letterforms, heavy weight, no serifs, no
+> script, no icons, no decoration — pure typography only. Single flat
+> **[white / black]** color throughout, transparent background. Flat vector
+> illustration style, clean line work, no gradients, no drop shadows, no
+> shading, no photorealism. Logo/wordmark composition, horizontal layout.
+
+**Casing variants to generate (white ink + black ink each):**
+1. `ReStraddle`
+2. `restraddle`
+3. `RESTRADDLE`
+4. `reSTRADDLE`
+5. `REstraddle`
+
+Swap the `[WORD]` and `[white / black]` placeholders in the template above
+for each of the 10 combinations (5 casings × 2 inks).
+
+---
+
+## Step 2 — standalone twin-chip icon (for manual D substitution)
+
+Generated separately from any text, sized as a self-contained unit meant to
+be scaled/positioned over the two D's afterward in a vector editor.
+
+**White ink:**
+> Flat vector icon, all solid white, two circular poker chip shapes
+> side by side, slightly overlapping or touching, each chip with a
+> dashed/notched edge ring like real poker chip edge spots. Sized as a
+> compact square-ish unit, no surrounding text or other elements. Single
+> flat white color throughout, transparent background. Flat vector
+> illustration style, clean line work, no gradients, no drop shadows, no
+> shading, no photorealism.
+
+**Black ink:**
+> Same as above, single flat black color throughout instead of white,
+> transparent background.
+
+**Manual substitution steps, once you have a Step 1 winner + the icon:**
+1. Bring the winning wordmark PNG into a vector tool (Illustrator, Figma,
+   Inkscape, or Canva) — trace/vectorize it if it didn't come out of
+   Recraft as clean vector already.
+2. Delete (or mask over) the two D's in "straddle."
+3. Drop in the twin-chip icon, scale it to match the cap-height of the
+   surrounding letters, and align it to the same baseline.
+4. Eyeball stroke weight and spacing against the neighboring letters —
+   this is the step that actually makes it look designed rather than
+   pasted on.
+
+---
+
+## Concept 2 — Chip-stack "T"
 
 **Concept:** the T in "straddle" becomes a short stack of poker chips
 viewed edge-on — the top chip's cap forms the crossbar, the stacked edges
@@ -87,7 +147,7 @@ form the vertical stroke.
 
 ---
 
-## 3. Card/spade "A"
+## Concept 3 — Card/spade "A"
 
 **Concept:** the A in "straddle" sharpens into a spade silhouette or a
 playing-card corner pip, tying the mark to cards rather than chips.
@@ -108,7 +168,7 @@ playing-card corner pip, tying the mark to cards rather than chips.
 
 ---
 
-## 4. Bridge mark (icon straddles the wordmark)
+## Concept 4 — Bridge mark (icon straddles the wordmark)
 
 **Concept:** not a letter swap — a single card or chip arcs over the seam
 between "re" and "STRADDLE," physically straddling the two halves of the
@@ -132,7 +192,7 @@ word. Most literal nod to the actual poker mechanic.
 
 ---
 
-## 5. Reduced monogram (favicon / small-size mark)
+## Concept 5 — Reduced monogram (favicon / small-size mark)
 
 **Concept:** separate from the full wordmark — a simplified icon-only mark
 for contexts where a full letter-swap wordmark won't survive shrinking
