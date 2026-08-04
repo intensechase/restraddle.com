@@ -201,6 +201,64 @@ for contexts where a full letter-swap wordmark won't survive shrinking
 
 ---
 
+## Concept 6 — Script wordmark (cursive, big curls)
+
+**Concept:** a real pivot from concepts 1-5 — those all match the site's
+existing bold-grotesk display font and blocky stamp/badge aesthetic. This
+one doesn't try to match; it's a **contrast mark**, an ornate flowing
+logotype against an otherwise utilitarian site, the way a lot of vintage
+Vegas neon signage or whiskey-brand logos pair a script wordmark with plain
+sans-serif everywhere else. Worth deciding if that's the intent before
+committing — see the "for the website" thread above.
+
+Pure typography only, no chip/card letter-substitution — connected cursive
+strokes don't have discrete letterforms to cut into the way block sans
+letters do. If a card/chip accent is wanted with this direction, it'd sit
+*next to* the wordmark (tucked near a curl, above/below), not replace a
+letter — a separate follow-up generation once a script style wins.
+
+**Expect a rougher hit rate than concepts 1-5.** Script/cursive text is
+generally harder for image models to spell correctly than block letters —
+connected strokes give the model more room to drift. If a font direction
+below keeps garbling the word after several tries, that's a signal to
+abandon the AI-generation route for it and either hand-letter or license
+the actual Google Font and set real type instead of asking for "similar
+to."
+
+Casing: capital R, rest lowercase (`Restraddle`) — scripts conventionally
+lead with one big decorative capital, which is also where "big curls"
+naturally shows up. All black ink, invert to white later, same as
+everything else in this doc.
+
+**Style A — bold rounded script (Lobster-style):**
+> Flat vector logo wordmark, all solid black, the word "Restraddle" in a
+> bold, chunky, rounded cursive script with a large decorative capital R,
+> connected flowing letterforms, moderate curls — confident and legible,
+> not delicate. Single flat black color throughout, transparent
+> background. Vector illustration style, smooth clean line work, no
+> gradients, no drop shadows, no shading, no photorealism. Logo/wordmark
+> composition, horizontal layout.
+
+**Style B — dramatic swash capital (Berkshire Swash-style):**
+> Flat vector logo wordmark, all solid black, the word "Restraddle" with an
+> oversized decorative swash capital R featuring large ornate curls and
+> flourishes, the rest of the word in a simpler connected cursive script
+> that stays legible. Single flat black color throughout, transparent
+> background. Vector illustration style, smooth clean line work, no
+> gradients, no drop shadows, no shading, no photorealism. Logo/wordmark
+> composition, horizontal layout.
+
+**Style C — bold brush script (Kaushan Script-style):**
+> Flat vector logo wordmark, all solid black, the word "Restraddle" in a
+> bold brush-lettered cursive script, confident varying stroke weight like
+> it was painted with a brush, connected flowing letterforms, casual but
+> strong. Single flat black color throughout, transparent background.
+> Vector illustration style, smooth clean line work, no gradients, no drop
+> shadows, no shading, no photorealism. Logo/wordmark composition,
+> horizontal layout.
+
+---
+
 ## Google Fonts reference (for typography direction in prompts)
 
 Not for actual site use (site's display font is a system "Arial Black"
@@ -226,6 +284,15 @@ if a generation's type doesn't feel right.
 - Oswald
 - Barlow Condensed Black
 - Fjalla One
+
+**Script/cursive — for concept 6, "big curls" direction:**
+- Lobster (bold, chunky, rounded — Style A reference)
+- Berkshire Swash (dramatic swash capitals — Style B reference)
+- Kaushan Script (bold brush script — Style C reference)
+- Yellowtail, Courgette, Pacifico (other bold-script alternatives)
+- Great Vibes, Alex Brush, Sacramento (thinner/more elegant — riskier at
+  small sizes and fragile on print, but worth a look if "curls" should
+  lean delicate rather than bold)
 
 **Monospace — matches the site's existing "stamp" accent font (currently
 Consolas) for any badge/stamp text paired with the logo:**
