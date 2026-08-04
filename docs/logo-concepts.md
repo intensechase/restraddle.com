@@ -52,10 +52,12 @@ references into one image (that's contradictory — script-Re-plus-block and
 full-block are alternate treatments of the same word) but a refined single
 best attempt at each lane.
 
-**Generation setting: 16:9.** Narrower than the ~4:1 these wordmarks
-naturally want, so expect a good amount of empty canvas above/below the
-actual logo — that's fine, crop it out afterward rather than fighting the
-preset for a tighter fit.
+**Generation setting: 21:9** (of Recraft's available presets — 21:9, 16:9,
+3:2, etc. — 21:9 at 2.33:1 is the closest to the ~4:1 these wordmarks
+naturally want, less empty canvas to crop than 16:9's 1.78:1). Doesn't need
+to be exact either way — same potrace vectorize-then-resize pipeline used
+for ideas 10-12 applies here, so crop/resize after generation is lossless
+regardless of which preset is picked.
 
 **Text-only lane (best of idea 1 + 2)** — idea 1's script-Re/block-STRADDLE
 split was the stronger of the two (matches the header's existing re+straddle
