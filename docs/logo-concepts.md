@@ -9,27 +9,82 @@ end up the winner instead.
 
 First real generations are in — saved to `docs/logo-references/`:
 
-- **`restraddle-idea-1-script-re-block-straddle.png`** — script "Re" flowing
-  into bold blocky "STRADDLE." **Leading candidate.** Splits at the word's
-  own morpheme boundary (re + straddle), the same place the live header
-  already splits by color — so it reads as an extension of the existing
-  brand rather than a pivot, while still landing the "big curls" ask in the
-  Re.
+- `restraddle-idea-1-script-re-block-straddle.png` — script "Re" flowing
+  into bold blocky "STRADDLE." Splits at the word's own morpheme boundary
+  (re + straddle), same place the live header already splits by color.
+  Superseded by ideas 10-12 below (direct concept-1 execution), kept as
+  reference.
 - `restraddle-idea-2-full-script.png` — full script "ReStraddle," one
-  flowing logotype. Good execution of the pure concept-6 contrast-mark
-  direction, but a bigger departure from the site's blocky identity than
-  idea 1. Kept as reference / fallback direction.
-- **`poker-chips-2-flat-geometric.png`** — flat geometric chip-stack icon.
-  **Leading candidate** for the icon family — matches the "flat vector, no
-  shading" brief and scales down cleanly.
-- `poker-chips-1-illustrative.png` — hand-drawn/line-art chip stack, more
-  charm but a different illustration register (vintage badge feel). Kept as
-  reference; would need the whole brand to lean illustrative to pair well
-  with a clean wordmark.
+  flowing logotype. Pure concept-6 contrast-mark direction. Kept as
+  reference / fallback if the block-letter direction doesn't pan out.
+- `poker-chips-2-flat-geometric.png` / `poker-chips-1-illustrative.png` —
+  standalone chip icon references, superseded by ideas 10-12 which bake the
+  chip style directly into the wordmark.
 
-**Working direction: idea 1 (script Re + block STRADDLE) paired with the
-flat geometric chip style, refining from here rather than generating fresh
+**Round 2 — the actual concept-1 letter-substitution, working directly**
+(contrary to the reliability concern flagged when concept 1 was written —
+worth noting the concern didn't hold up here):
+
+- `restraddle-idea-10-block-chips-flat.svg` — "RESTRA[chips]LE," uniform
+  bold block case, flat geometric chips for the double-D. **In the running.**
+- `restraddle-idea-11-block-chips-flat-recase.svg` — same layout, "Re"/"Le"
+  in a smaller-weight treatment that echoes the header's existing re+straddle
+  split. **In the running.**
+- ~~`restraddle-idea-12-block-chips-illustrative.svg`~~ — same layout,
+  illustrative/detailed chip rendering. **Eliminated 2026-08-04.**
+
+All three vectorized via potrace (autotrace, not a hand-cleaned redraw —
+still needs a designer pass before final production use) and previewed
+in the real header at
+[this artifact](https://claude.ai/code/artifact/5e2148fa-866f-4208-a1bb-61231cb231ad).
+
+**Working direction: idea 10 or idea 11, bold block wordmark with the flat
+geometric chip style — refining from here rather than generating fresh
 concepts from scratch.**
+
+---
+
+## Round 3 — refinement prompts on the idea 10/11 direction
+
+Targeted variations on the working direction rather than new concepts.
+Same black-ink/invert-later convention as everything else.
+
+**Clean-edge variant** (10/11 both came out with a slightly rough,
+stamped/torn letter edge — worth testing on purpose, since it happens to
+echo the site's existing "stamp" motif, and testing removed, in case clean
+reads better):
+> Flat vector logo wordmark, all solid black, the text "RESTRA" then two
+> circular flat poker chip icons side by side replacing the double-D, then
+> "LE" — chips with a clean simple ring and evenly spaced edge notches, no
+> texture or distress. Bold geometric sans-serif letterforms, heavy weight,
+> perfectly clean smooth edges, no rough or torn edge texture. Single flat
+> black color throughout, transparent background. Flat vector illustration
+> style, no gradients, no shading, no photorealism. Logo/wordmark
+> composition, horizontal layout.
+
+**Even chip-height variant** (10/11 both have one chip stack taller than
+the other — worth testing a version where both match the D's height
+exactly, for a more uniform letterform read):
+> Flat vector logo wordmark, all solid black, the text "RESTRA" then two
+> circular flat poker chip icons of identical height side by side replacing
+> the double-D, evenly matched in size to each other and to the cap-height
+> of the surrounding letters, then "LE" — chips with a clean ring and
+> evenly spaced edge notches. Bold geometric sans-serif letterforms, heavy
+> weight. Single flat black color throughout, transparent background. Flat
+> vector illustration style, no gradients, no shading, no photorealism.
+> Logo/wordmark composition, horizontal layout.
+
+**Re/Le echo, more pronounced** (push idea 11's size-split further, testing
+if a bigger contrast between "Re"/"Le" and "STRA[chips]" reads better or
+worse):
+> Flat vector logo wordmark, all solid black, a small lowercase "Re" then a
+> large bold uppercase "STRA," then two circular flat poker chip icons side
+> by side replacing the double-D, then a small lowercase "Le" matching the
+> size of the opening "Re" — chips with a clean ring and evenly spaced edge
+> notches. Bold geometric sans-serif letterforms. Single flat black color
+> throughout, transparent background. Flat vector illustration style, no
+> gradients, no shading, no photorealism. Logo/wordmark composition,
+> horizontal layout.
 
 ## How Merch by Amazon actually prints this
 
