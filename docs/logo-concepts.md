@@ -52,6 +52,11 @@ references into one image (that's contradictory — script-Re-plus-block and
 full-block are alternate treatments of the same word) but a refined single
 best attempt at each lane.
 
+**Generation setting: 16:9.** Narrower than the ~4:1 these wordmarks
+naturally want, so expect a good amount of empty canvas above/below the
+actual logo — that's fine, crop it out afterward rather than fighting the
+preset for a tighter fit.
+
 **Text-only lane (best of idea 1 + 2)** — idea 1's script-Re/block-STRADDLE
 split was the stronger of the two (matches the header's existing re+straddle
 break point; idea 2's full script was a bigger identity departure), so this
