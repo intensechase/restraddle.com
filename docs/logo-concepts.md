@@ -1,5 +1,65 @@
 # Restraddle Logo — Recraft Prompts
 
+## Concept 7 — the meaning itself, no text (2026-08-04)
+
+Everything above is a wordmark treatment. This one is different in kind: a
+pure icon, no letters at all, built around what a restraddle actually *is*
+rather than how the word is spelled. Blinds are the forced floor. A
+straddle is a voluntary raise on top of that floor, before cards come out.
+A restraddle is someone raising again on top of the straddle. Three layers,
+each bigger than the last — the escalation is the whole reason the site is
+named what it is, and it's expressible as pure image without needing
+anyone to read anything.
+
+Three directions considered, all pure icon, no text, no letters, no
+numbers, black ink, transparent background:
+
+- **Option 1 — The Staircase.** Three chip stacks side by side, ascending
+  left to right, evenly spaced on a shared baseline. Universally legible —
+  reads like a bar chart, works at tiny sizes. Safest, least distinctive.
+- **Option 2 — The Overlap. Chosen direction.** Three stacks in a rising
+  diagonal cascade, each overlapping the base of the shorter one behind it,
+  like it was just set down on top. The only option that shows *stacking on
+  top of* rather than just *being taller than* — the literal mechanic, not
+  an approximation of it. Needs more room to read than Option 1, so this is
+  the header/hero-scale mark; a simpler shape still handles favicon duty
+  separately (matches the existing plan — Concept 5's small-size mark was
+  always going to be its own asset).
+- **Option 3 — The Single Ascending Pile.** One continuous stack, wide
+  chips at the base tapering narrower toward the top. Most compact, best at
+  tiny sizes, but reads as "a pile that grows" rather than three distinct
+  escalating actions — weaker match for blinds→straddle→restraddle
+  specifically.
+
+**Option 2 prompt (chosen):**
+> Flat vector icon, all solid black, three poker chip stacks arranged in a
+> rising diagonal cascade, each stack overlapping the base of the shorter
+> stack behind it as if freshly placed on top, ascending from shortest at
+> the bottom-left to tallest at the top-right, each chip disc with simple
+> edge-notch details. No text, no letters, no numbers. Single flat black
+> color throughout, transparent background. Flat vector illustration style,
+> clean geometric line work, no gradients, no shading, no photorealism.
+
+**Option 1 prompt (fallback — safest/most universal):**
+> Flat vector icon, all solid black, three poker chip stacks arranged side
+> by side in ascending height from left to right — shortest on the left,
+> tallest on the right — each stack made of a different number of stacked
+> chip discs with simple edge-notch details, evenly spaced, sitting on a
+> shared baseline. No text, no letters, no numbers. Single flat black color
+> throughout, transparent background. Flat vector illustration style, clean
+> geometric line work, no gradients, no shading, no photorealism.
+
+**Option 3 prompt (fallback — most compact/favicon-friendly):**
+> Flat vector icon, all solid black, a single continuous poker chip stack
+> that grows narrower and taller toward the top, wider chip discs at the
+> base tapering to narrower discs higher up, one unified silhouette
+> suggesting continuous escalating growth, chip discs with simple
+> edge-notch details. No text, no letters, no numbers. Single flat black
+> color throughout, transparent background. Flat vector illustration style,
+> clean geometric line work, no gradients, no shading, no photorealism.
+
+---
+
 Five independent directions. Concept 1 (chip-stack "dd") is broken into a
 two-step process — see below for why. Concepts 2-5 are single-generation
 prompts for now, though the same two-step split applies to 2 and 3 if they
