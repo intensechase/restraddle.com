@@ -44,6 +44,48 @@ concepts from scratch.**
 
 ---
 
+## Best-shot pair (2026-08-04) — one prompt each, not a fresh batch
+
+Two prompts total, spending minimal generations since idea 1/2 and idea
+10/11 already got most of the way there. Not a combination of both
+references into one image (that's contradictory — script-Re-plus-block and
+full-block are alternate treatments of the same word) but a refined single
+best attempt at each lane.
+
+**Text-only lane (best of idea 1 + 2)** — idea 1's script-Re/block-STRADDLE
+split was the stronger of the two (matches the header's existing re+straddle
+break point; idea 2's full script was a bigger identity departure), so this
+refines that direction rather than averaging both:
+> Flat vector logo wordmark, all solid black, the word "Restraddle" — the
+> "Re" rendered in a bold flowing cursive script with one large decorative
+> curl, connecting directly into "STRADDLE" rendered in bold blocky
+> geometric sans-serif capitals, heavy weight, no serifs. The script portion
+> and the block portion should read as two deliberate halves of one
+> wordmark, not mismatched fonts stuck together. Single flat black color
+> throughout, transparent background. Vector illustration style, smooth
+> clean line work, no gradients, no drop shadows, no shading, no
+> photorealism. Logo/wordmark composition, horizontal layout.
+
+**Text/chip combo lane (best of idea 10 + 11, learning from 12)** — flat
+geometric chips (not 12's illustrative detail, which got cut), clean edges
+instead of the rough/stamped texture both 10 and 11 came out with, chips
+matched in height to each other:
+> Flat vector logo wordmark, all solid black, the text "RESTRA" then two
+> circular flat poker chip icons of matching height side by side replacing
+> the double-D, chips with a clean simple ring and evenly spaced edge
+> notches, no texture or distress, then "LE" — all in bold geometric
+> sans-serif capitals, heavy weight, perfectly clean smooth edges. Single
+> flat black color throughout, transparent background. Flat vector
+> illustration style, no gradients, no shading, no photorealism.
+> Logo/wordmark composition, horizontal layout.
+
+(Went with idea 10's uniform block case rather than idea 11's smaller
+Re/Le treatment for this one — simpler, and no clear signal yet on which
+case treatment you preferred. Easy to redo with the Re/Le echo if this
+version doesn't land.)
+
+---
+
 ## Round 3 — refinement prompts on the idea 10/11 direction
 
 Targeted variations on the working direction rather than new concepts.
