@@ -17,14 +17,18 @@ sub-path/seam problem entirely.
 
 **Prompt:**
 > Using the reference image as the base composition, recolor the three chip
-> stacks with a subtle, muted color per stack instead of solid black: the
-> shortest stack in a warm off-white or cream tone, the middle stack in a
-> muted brick red, the tallest stack in a muted forest green. Keep all the
-> black outline and edge-notch linework exactly as shown. Colors should
-> feel understated and flat, not bright, glossy, or cartoonish — no
-> gradients, no shading beyond the flat color per stack. Vector illustration
-> style, clean crisp linework, high resolution, print-ready for t-shirt
-> production. Transparent background.
+> stacks to reflect real poker chip denominations, escalating from the
+> smallest forced bet to the biggest voluntary raise: the shortest stack
+> represents a $1/$2 blind and should be a warm off-white or cream tone
+> (standard $1 chip color), the middle stack represents a $10 straddle and
+> should be a muted brick red (standard $5 chip color, scaled up), the
+> tallest stack represents a $20 restraddle — the final raise on top of the
+> straddle — and should be a muted forest green (standard $25 chip color).
+> Keep all the black outline and edge-notch linework exactly as shown.
+> Colors should feel understated and flat, not bright, glossy, or
+> cartoonish — no gradients, no shading beyond the flat color per stack.
+> Vector illustration style, clean crisp linework, high resolution,
+> print-ready for t-shirt production. Transparent background.
 
 Generation settings: same as concept 7's original run — no hex-specific
 guidance, Recraft V4.0 Pro, vector mode, high-resolution output (print-ready
