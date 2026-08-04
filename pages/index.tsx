@@ -83,7 +83,7 @@ export default function Home() {
 
           <Link
             href="/rules"
-            className="group relative overflow-hidden rounded-xl border-2 border-border bg-surface p-9"
+            className="group relative overflow-hidden rounded-xl border-2 border-felt/40 bg-surface p-9 transition-colors hover:border-felt"
           >
             <div className="font-[var(--font-stamp)] text-[11px] font-bold uppercase tracking-widest text-ink-faint">
               If You&apos;re Here For Rules
@@ -92,14 +92,14 @@ export default function Home() {
             <p className="mb-6 max-w-xs text-[13px] leading-relaxed text-ink-faint">
               {GAMES.length} variants, correctly explained. No beginner filler.
             </p>
-            <span className="inline-block border-b-2 border-gold-dim pb-1 text-xs font-bold uppercase tracking-wide text-gold transition-colors group-hover:text-gold">
+            <span className="inline-block border-b-2 border-felt pb-1 text-xs font-bold uppercase tracking-wide text-felt">
               Open the Book →
             </span>
             <img
-              src="/chip-mark.svg"
+              src="/chip-mark-green.svg"
               alt=""
               aria-hidden="true"
-              className="pointer-events-none absolute -bottom-6 -right-6 h-28 w-28 opacity-[0.08]"
+              className="pointer-events-none absolute -bottom-6 -right-6 h-28 w-28 opacity-[0.1]"
             />
           </Link>
         </div>
