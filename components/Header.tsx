@@ -2,9 +2,9 @@ import { useState } from "react";
 import Link from "next/link";
 
 const NAV_LINKS = [
+  { href: "/shop", label: "Shop" },
   { href: "/rules", label: "Straddles" },
   { href: "/games", label: "Games" },
-  { href: "/shop", label: "Shop" },
   { href: "/about", label: "About" },
 ];
 
@@ -27,10 +27,11 @@ export default function Header() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-7 py-4">
           <Link
             href="/"
-            className="rounded font-display text-xl font-black uppercase focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+            className="flex items-center rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
             onClick={() => setMobileOpen(false)}
           >
-            re<span className="text-red-bright">straddle</span>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logo.png" alt="Restraddle" className="h-9 w-auto" />
           </Link>
 
           <nav aria-label="Primary" className="hidden gap-7 text-sm font-bold uppercase tracking-wide sm:flex">
