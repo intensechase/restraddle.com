@@ -5,6 +5,32 @@ two-step process — see below for why. Concepts 2-5 are single-generation
 prompts for now, though the same two-step split applies to 2 and 3 if they
 end up the winner instead.
 
+## Current direction (as of 2026-08-04)
+
+First real generations are in — saved to `docs/logo-references/`:
+
+- **`restraddle-idea-1-script-re-block-straddle.png`** — script "Re" flowing
+  into bold blocky "STRADDLE." **Leading candidate.** Splits at the word's
+  own morpheme boundary (re + straddle), the same place the live header
+  already splits by color — so it reads as an extension of the existing
+  brand rather than a pivot, while still landing the "big curls" ask in the
+  Re.
+- `restraddle-idea-2-full-script.png` — full script "ReStraddle," one
+  flowing logotype. Good execution of the pure concept-6 contrast-mark
+  direction, but a bigger departure from the site's blocky identity than
+  idea 1. Kept as reference / fallback direction.
+- **`poker-chips-2-flat-geometric.png`** — flat geometric chip-stack icon.
+  **Leading candidate** for the icon family — matches the "flat vector, no
+  shading" brief and scales down cleanly.
+- `poker-chips-1-illustrative.png` — hand-drawn/line-art chip stack, more
+  charm but a different illustration register (vintage badge feel). Kept as
+  reference; would need the whole brand to lean illustrative to pair well
+  with a clean wordmark.
+
+**Working direction: idea 1 (script Re + block STRADDLE) paired with the
+flat geometric chip style, refining from here rather than generating fresh
+concepts from scratch.**
+
 ## How Merch by Amazon actually prints this
 
 Worth correcting before writing prompts: Merch by Amazon is **not** screen
