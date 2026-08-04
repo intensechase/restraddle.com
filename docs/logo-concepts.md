@@ -31,6 +31,9 @@ numbers, black ink, transparent background:
   escalating actions — weaker match for blinds→straddle→restraddle
   specifically.
 
+**Generation settings:** no reference image (new composition, nothing to
+reference from), Recraft V4.0 Pro, vector mode.
+
 **Option 2 prompt (chosen):**
 > Flat vector icon, all solid black, three poker chip stacks arranged in a
 > rising diagonal cascade, each stack overlapping the base of the shorter
