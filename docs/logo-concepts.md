@@ -35,6 +35,19 @@ guidance, Recraft V4.0 Pro, vector mode, high-resolution output (print-ready
 per the Merch by Amazon specs earlier in this doc, not just web/favicon
 size, since this one may end up on a shirt).
 
+**Results:** five generations from this prompt, saved to
+`docs/logo-references/` as `concept7-colored-v1.png` through `v5.png`.
+v1/v2 near-identical to each other, thinner outline weight. v3/v4 bolder,
+cleaner linework. **v5 is the current chosen source** — confirmed genuinely
+transparent (alpha=0 at background, not a baked-in black canvas) and the
+cleanest render of the set, no visible seam artifacts. Shown across six
+shirt colors (black, white, navy, purple, heather grey, forest green) via
+vector shirt-silhouette mockup at
+[this artifact](https://claude.ai/code/artifact/10cdbea8-0c30-4271-af8a-68a3e3429049)
+(mockup is a hand-drawn flat vector shirt shape, not a real photo mockup —
+no GIMP/Illustrator available locally to open the actual Merch by Amazon
+template files for a literal official mockup).
+
 ## Concept 7 — the meaning itself, no text (2026-08-04)
 
 Everything above is a wordmark treatment. This one is different in kind: a
