@@ -43,7 +43,7 @@ export default function Home() {
 
       <section className="border-b-2 border-dashed border-border px-7 py-16">
         <div className="mx-auto max-w-6xl text-center">
-          <div className="mb-5 inline-flex -rotate-1 items-center gap-2 border-2 border-gold px-4 py-1.5 font-[var(--font-stamp)] text-xs uppercase tracking-widest text-gold">
+          <div className="mb-5 inline-flex -rotate-1 items-center gap-2 border-2 border-red-bright px-4 py-1.5 font-[var(--font-stamp)] text-xs uppercase tracking-widest text-red-bright">
             ☙ Ultimate Last Action ☙
           </div>
           <h1 className="mx-auto mb-4 max-w-2xl font-[var(--font-script)] text-5xl leading-[1.15] text-balance sm:text-6xl">
@@ -109,7 +109,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-8 flex items-baseline justify-between">
             <h2 className="font-display text-2xl font-black uppercase">Fresh Off the Press</h2>
-            <Link href="/shop" className="text-xs font-bold uppercase tracking-wide text-gold">
+            <Link href="/shop" className="text-xs font-bold uppercase tracking-wide text-red-bright">
               Shop Everything →
             </Link>
           </div>
@@ -131,7 +131,7 @@ export default function Home() {
                 obscure.
               </p>
             </div>
-            <Link href="/games" className="text-xs font-bold uppercase tracking-wide text-gold">
+            <Link href="/games" className="text-xs font-bold uppercase tracking-wide text-felt">
               Open the Book →
             </Link>
           </div>
@@ -140,7 +140,7 @@ export default function Home() {
               <Link
                 key={g.slug}
                 href={`/games/${g.slug}`}
-                className="rounded-lg border-2 border-border bg-surface p-5 transition-colors hover:border-gold"
+                className="rounded-lg border-2 border-border bg-surface p-5 transition-colors hover:border-felt"
               >
                 <h3 className="mb-1.5 font-bold">{g.name}</h3>
                 <p className="text-xs leading-snug text-ink-mute">{g.hook}</p>

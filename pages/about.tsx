@@ -49,14 +49,14 @@ export default function About() {
           </p>
 
           <p>
-            The <Link href="/games" className="text-gold hover:underline">Rulebook</Link>{" "}
+            The <Link href="/games" className="text-felt hover:underline">Rulebook</Link>{" "}
             is the biggest thing here&hellip; 63 variants, each with its own page, researched properly rather than
             guessed at from the name.
           </p>
 
           <p>
             No ads on this site, and that&apos;s on purpose, not a placeholder. The actual business is the{" "}
-            <Link href="/shop" className="text-gold hover:underline">shop</Link>&hellip; shirts, and eventually a
+            <Link href="/shop" className="text-red-bright hover:underline">shop</Link>&hellip; shirts, and eventually a
             compiled book pulling the best of the Rulebook and the blog into one physical reference you can
             actually keep at the table. If something here is useful to you, that&apos;s the way to say so.
           </p>
