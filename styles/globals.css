@@ -1,16 +1,17 @@
 @import "tailwindcss";
 
 /*
- * Palette + type locked 2026-08-02 (see project memory: "Dealer's Choice"
- * direction, confirmed after a 3-way comparison mockup). Don't hand-tweak
- * without updating that record — these values are the actual approved
- * mockup's colors, not placeholders.
+ * Palette + type revised 2026-08-04 — underground NY/NJ backroom-club
+ * direction (chip icon as the only brand mark, script accents, near-black
+ * "basement" background). Supersedes the 2026-08-02 "Dealer's Choice"
+ * lock; same five colors (gold/cream/black/red/green) carried forward as
+ * fixed brand staples, --bg pushed darker toward true black.
  */
 :root {
-  --bg: #160d0c;
-  --surface: #241514;
-  --surface-2: #2c1917;
-  --border: #40241f;
+  --bg: #0a0605;
+  --surface: #180f0d;
+  --surface-2: #1f1412;
+  --border: #3a231e;
   --ink: #f6ece0;
   --ink-mute: #bea08e;
   --ink-faint: #8a6f60;
@@ -37,6 +38,7 @@
 
   --font-display: "Arial Black", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-stamp: "Consolas", "SF Mono", "Courier New", monospace;
+  --font-script: var(--font-script), cursive;
 }
 
 body {

@@ -39,7 +39,7 @@ export default function Rules() {
             content; this assumes you already play.
           </p>
 
-          <div className="relative mt-10 rounded-2xl border-2 border-gold-dim bg-[linear-gradient(155deg,var(--surface-2),var(--surface))] p-9">
+          <div className="relative mt-10 rounded-2xl border-2 border-felt/50 bg-[linear-gradient(155deg,var(--surface-2),var(--surface))] p-9">
             <div className="absolute -top-3.5 left-8 rounded-full bg-gold px-3.5 py-1.5 text-[11px] font-extrabold uppercase tracking-wide text-[#241102]">
               Flagship Entry
             </div>
@@ -51,7 +51,7 @@ export default function Rules() {
             <div className="flex flex-wrap gap-7 border-t border-border pt-4">
               {flagship.facts?.map((f) => (
                 <div key={f.label}>
-                  <div className="text-[11px] font-bold uppercase tracking-wide text-gold">{f.label}</div>
+                  <div className="text-[11px] font-bold uppercase tracking-wide text-felt">{f.label}</div>
                   <div className="mt-0.5 text-sm text-ink-mute">{f.value}</div>
                 </div>
               ))}

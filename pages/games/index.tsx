@@ -41,7 +41,7 @@ export default function GamesIndex() {
         <div className="flex flex-col items-center justify-center px-7 py-20 text-center">
           <button
             onClick={() => setOpen(true)}
-            className="group relative mb-8 h-72 w-52 rounded-r-md border-y-2 border-r-2 border-gold bg-[linear-gradient(155deg,var(--surface-2),var(--surface))] shadow-[8px_8px_0_var(--border)] transition-transform hover:-translate-y-1 hover:shadow-[10px_10px_0_var(--border)]"
+            className="group relative mb-8 h-72 w-52 rounded-r-md border-y-2 border-r-2 border-felt bg-[linear-gradient(155deg,var(--surface-2),var(--surface))] shadow-[8px_8px_0_var(--border)] transition-transform hover:-translate-y-1 hover:shadow-[10px_10px_0_var(--border)]"
             aria-label="Open the rulebook"
           >
             {/* spine */}
@@ -52,7 +52,7 @@ export default function GamesIndex() {
               <br />
               Rulebook
             </span>
-            <span className="absolute inset-x-4 bottom-6 font-[var(--font-stamp)] text-[11px] uppercase tracking-wide text-gold">
+            <span className="absolute inset-x-4 bottom-6 font-[var(--font-stamp)] text-[11px] uppercase tracking-wide text-felt">
               63 Games · Tap to Open
             </span>
           </button>

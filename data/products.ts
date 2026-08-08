@@ -1,5 +1,16 @@
 export type ProductCategory = "club" | "neutral" | "content";
 
+// Each category gets one of the site's five brand colors, borrowed from the
+// same denomination logic as the chip-stack icon (distinct color = distinct
+// tier). Gold stays the "club" prestige color it already was site-wide;
+// neutral gets the actual neutral (cream); content-tied gets green, which
+// otherwise had zero real use anywhere on the site.
+export const CATEGORY_COLOR: Record<ProductCategory, string> = {
+  club: "var(--gold)",
+  neutral: "var(--ink)",
+  content: "var(--felt)",
+};
+
 export interface Product {
   slug: string;
   name: string;
