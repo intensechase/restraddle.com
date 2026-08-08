@@ -1,9 +1,20 @@
 import type { AppProps } from "next/app";
+import Script from "next/script";
 import "@/styles/globals.css";
 
-// GA4 property not yet created for this site — add the measurement ID +
-// Script tags here once one exists, matching the pattern in every other
-// site's _app.tsx (see giraffepaper.com/pages/_app.tsx for the reference).
+const GA_MEASUREMENT_ID = "G-FS9RPP5G1H";
+
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} strategy="afterInteractive" />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '${GA_MEASUREMENT_ID}');`}
+      </Script>
+      <Component {...pageProps} />
+    </>
+  );
 }
