@@ -4,4 +4,4 @@
 set -euo pipefail
 cd /root/restraddle-build
 git pull origin main
-exec bash deploy/deploy.sh
+exec bash deploy/deploy.sh "$@"
